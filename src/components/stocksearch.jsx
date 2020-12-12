@@ -5,7 +5,7 @@ const Stocksearch = () => {
     }
 
     const handleSubmit = () => {
-        
+
     }
 
     return (
@@ -15,7 +15,7 @@ const Stocksearch = () => {
             <input
                 type="text"
                 name="stockTicker"
-                value="Enter Your Ticker"
+                // value=""
                 onChange={matchTicker}
 
             />

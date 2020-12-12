@@ -9,13 +9,13 @@ const App = () => {
         <Stocksearch />
       </header>
       <main>
-      Hello worlds!
+        this is the new repo!
       <Switch >
-        {/* <Route expact path='/' component={Landing} /> */}
-      </Switch>
+          {/* <Route expact path='/' component={Landing} /> */}
+        </Switch>
       </main>
       <footer>
-      <a href="https://iexcloud.io">Data provided by IEX Cloud</a>
+        <a href="https://iexcloud.io">Data provided by IEX Cloud</a>
       </footer>
     </div>
   );

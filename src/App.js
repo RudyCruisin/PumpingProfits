@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link, Route, Switch } from 'react-router-dom';
+import Stocksearch from './components/stocksearch';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="y-app">
+      <header>
+        {/* <Link to='/'>Home</Link> */}
+        <Stocksearch />
       </header>
+      <main>
+      Hello worlds!
+      <Switch >
+        {/* <Route expact path='/' component={Landing} /> */}
+      </Switch>
+      </main>
+      <footer>
+      <a href="https://iexcloud.io">Data provided by IEX Cloud</a>
+      </footer>
     </div>
   );
 }

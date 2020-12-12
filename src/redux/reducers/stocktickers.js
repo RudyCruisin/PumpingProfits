@@ -1,7 +1,7 @@
 import { SAVE_TICKERS } from '../actionsTypes';
 
 const initialState = {
-    savedSymbl: []
+    savedSymbls: []
 };
 
 export const stockTickers = (state = initialState, action) => {
@@ -9,8 +9,8 @@ export const stockTickers = (state = initialState, action) => {
         case SAVE_TICKERS: {
             return {
                 ...state,
-                savedSymbl: [
-                    ...state.savedSymbl,
+                savedSymbls: [
+                    ...state.savedSymbls,
                     {
                         ...action.payload.savedSymbl
                     }

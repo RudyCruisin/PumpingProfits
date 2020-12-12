@@ -1,0 +1,25 @@
+import { connect } from "react-redux";
+
+const StockList = ({ savedSymbls }) => {
+
+  const symblList = savedSymbls.map((savedSymbl, index) => {
+    const { symbl } = savedSymbl;
+    return (
+      <li key={index}>
+        <span>{symbl}</span>
+      </li>
+    );
+  });
+
+  return (
+    <div>
+      <p>{symblList}</p>
+    </div>
+  );
+};
+
+const mapStateToProps = (state) => ({
+  savedSymbls: state.stockTickers.savedSymbls,
+});
+
+export default connect(mapStateToProps)(StockList);

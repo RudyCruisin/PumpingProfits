@@ -1,5 +1,6 @@
-import { Link, Route, Switch } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import Stocksearch from './components/stocksearch';
+import Stocklist from './components/stocklist';
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
         <Stocksearch />
       </header>
       <main>
-        lets build some stocks
+      <Stocklist />
+       {/* <Stockdata /> */}
       <Switch >
           {/* <Route expact path='/' component={Landing} /> */}
         </Switch>

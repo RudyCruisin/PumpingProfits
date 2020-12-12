@@ -1,16 +1,19 @@
 import { connect } from 'react-redux';
 import { useState } from 'react';
 import { saveTickers } from '../redux/actions';
+import React from 'react';
 
-const Stocksearch = props => {
+const Stocksearch = (props) => {
 
     const [symbl, setSymbl] = useState('');
 
-    const matchTicker = () => {
+    // const matchTicker = () => {
+    //     const url = 'https://cloud.iexapis.com/beta/ref-data/symbols?token=pk_4fc5d3b61472414c8d99930c0ccbffe6';
+    //     fetch(url)
+    //         .then(response => response.json())
+    // }
 
-    }
-
-    const handleChange = e => {
+    const handleChange = (e) => {
         setSymbl(e.target.value)
     }
 
@@ -22,11 +25,10 @@ const Stocksearch = props => {
     return (
 
         <div>
-            <img src={'/pump.png'} alt = {"pumping profits logo"}></img>
+            <img src={'/pump.png'} alt={"pumping profits logo"}></img>
             <input
                 type="text"
                 name="stockTicker"
-                // value="test"
                 onChange={handleChange}
 
             />

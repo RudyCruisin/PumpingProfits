@@ -9,7 +9,7 @@ const App = () => {
         <Stocksearch />
       </header>
       <main>
-        this is the new repo!
+        lets build some stocks
       <Switch >
           {/* <Route expact path='/' component={Landing} /> */}
         </Switch>

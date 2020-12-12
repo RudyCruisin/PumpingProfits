@@ -50,3 +50,8 @@ main {
 a {
   color: orange;
 }
+
+img {
+  width: 5vh;
+  margin-right: 50px;
+}

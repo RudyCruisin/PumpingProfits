@@ -5,15 +5,15 @@ const StockList = ({ savedSymbls }) => {
   const symblList = savedSymbls.map((savedSymbl, index) => {
     const { symbl } = savedSymbl;
     return (
-      <li key={index}>
-        <span>{symbl}</span>
-      </li>
+      <ul key={index}>
+        <li><a>{symbl}</a></li>
+      </ul>
     );
   });
 
   return (
     <div>
-      <p>{symblList}</p>
+      {symblList}
     </div>
   );
 };

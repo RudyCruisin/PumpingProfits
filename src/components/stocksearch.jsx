@@ -25,7 +25,6 @@ const Stocksearch = (props) => {
     return (
 
         <div>
-            <img src={'/pump.png'} alt={"pumping profits logo"}></img>
             <input
                 type="text"
                 name="stockTicker"

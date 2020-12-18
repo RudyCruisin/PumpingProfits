@@ -1,7 +1,9 @@
 import { Switch } from 'react-router-dom';
+// import { Stocksearch, Stocklist, Stockdata, Stockdisplay } from './components'
 import Stocksearch from './components/stocksearch';
 import Stocklist from './components/stocklist';
 import Stockdata from './components/stockdata';
+import Stockdisplay from './components/stockdisplay';
 
 const App = () => {
   return (
@@ -21,8 +23,7 @@ const App = () => {
               <Stockdata />
             </div>
             <div className="three">
-              Hello world
-            {/* <Stockdisplay /> */}
+              <Stockdisplay />
             </div>
           </div>
           <Switch >

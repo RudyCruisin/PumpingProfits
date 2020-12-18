@@ -88,3 +88,9 @@ ul {
   border: solid green;
   grid-row: 2/3;
 }
+
+.tickerSelect {
+  background-color: green;
+  padding: 5px;
+  cursor: cell;
+}

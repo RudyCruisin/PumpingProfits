@@ -6,7 +6,7 @@ const StockList = ({ savedSymbls }) => {
     const { symbl } = savedSymbl;
     return (
       <ul key={index}>
-        <li><a>{symbl}</a></li>
+        <span onClick={console.log("hello")} className="tickerSelect">{symbl}</span>
       </ul>
     );
   });

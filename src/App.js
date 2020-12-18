@@ -12,12 +12,18 @@ const App = () => {
         <Stocksearch />
       </header>
       <main>
-        <div className="r-app">
-          <div className="r1-app">
+        <div className="wrapper">
+          <div className="one">
             <Stocklist />
           </div>
-          <div className="r2-app">
-          <Stockdata />
+          <div className="box box1">
+            <div className="two">
+              <Stockdata />
+            </div>
+            <div className="three">
+              Hello world
+            {/* <Stockdisplay /> */}
+            </div>
           </div>
           <Switch >
             {/* <Route expact path='/' component={Landing} /> */}

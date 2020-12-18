@@ -40,7 +40,6 @@ main {
   flex: 1;
   /* justify-content: center; */
   /* width: 100%; */
-  
 }
 
 .y-app {
@@ -60,20 +59,32 @@ img {
 
 ul {
   list-style-type: none;
-  border:solid yellow;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.r-app {
-  border: solid skyblue;  
-  align-items: flex-start;
-  display: flex;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 16fr;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.r1-app {
+.one {
   border: solid red;
-  /* flex: 1; */
 }
 
-.r2-app {
+.box1 {
+  display: grid;
+  grid-template-rows: 1fr 73vh;
+  bordeR: solid silver;
+} 
+
+.two {
   border: solid purple;
+  grid-row: 1;
+}
+
+.three {
+  border: solid green;
+  grid-row: 2/3;
 }

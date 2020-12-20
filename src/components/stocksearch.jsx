@@ -19,7 +19,6 @@ const Stocksearch = (props) => {
 
     const handleSubmit = () => {
         props.saveTickers(symbl);
-        // setSymbl('');
     }
 
     return (
@@ -39,8 +38,5 @@ const Stocksearch = (props) => {
 const mapDispatchToProps = dispatch => ({
     saveTickers: (val) => dispatch(saveTickers(val))
 });
-
-// const mapStateToProps = state => ({
-// })
 
 export default connect(null, mapDispatchToProps)(Stocksearch);

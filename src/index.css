@@ -57,7 +57,7 @@ img {
   padding-right: 10vh;
 }
 
-ul {
+.tickerUl {
   list-style-type: none;
   padding-right: 10px;
   padding-left: 10px;
@@ -90,6 +90,16 @@ ul {
 }
 
 .tickerSelect {
+  background-color: red;
+  padding: 5px;
+  cursor: cell;
+}
+
+/* .tickerSelect:hover {
+  background-color: white;
+} */
+
+.tickerUnselect {
   background-color: green;
   padding: 5px;
   cursor: cell;

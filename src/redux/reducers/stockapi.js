@@ -6,8 +6,8 @@ const initialState = {
 };
 
 export const stockApi = (state = initialState, action) => {
-    console.log("AM I DISPATCHING??!")
-    console.log(action.payload)
+    // console.log("AM I DISPATCHING??!")
+    // console.log(action.payload)
     switch (action.type) {
         case STOCK_DATA: {
             return action.payload;

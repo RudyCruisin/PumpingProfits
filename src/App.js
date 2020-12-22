@@ -4,6 +4,7 @@ import Stocksearch from './components/stocksearch';
 import Stocklist from './components/stocklist';
 import Stockdata from './components/stockdata';
 import Stockdisplay from './components/stockdisplay';
+import SetTicker from './components/setticker';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <div className="box box1">
             <div className="two">
               <Stockdata />
+              <SetTicker />
             </div>
             <div className="three">
               <Stockdisplay />

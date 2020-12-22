@@ -10,6 +10,7 @@ class ApiState extends Component {
     render() {
         return (
             <div>
+            Hello World
                 {this.createApiTicker()}
             </div>
         )

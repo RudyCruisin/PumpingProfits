@@ -1,27 +1,27 @@
 import { connect } from 'react-redux';
-// import { useState } from 'react';
 import { stockApi } from '../redux/actions'
 
 const stockData = props => {
 
-    const handleStockApi = () => {
-        props.stockApi();
+    const handleStockApi = (symbl) => {
+        props.stockApi(symbl);
+        console.log(symbl)
     };
 
     return (
         <div>
-            <button onClick={handleStockApi}>Pull Data!</button>
-            <ul>{props.stock}</ul>
+            <button onClick={() => handleStockApi()}>Pull Data!</button>
+            {/* {JSON.stringify(activeTicker.activeSymbl)} */}
         </div>
     );
 };
 
 const mapDispatchToProps = dispatch => ({
-    stockApi: () => dispatch(stockApi())
+    stockApi: symbl => dispatch(stockApi(symbl))
 });
 
 const mapStateToProps = state => ({
-    stock: state.stock
+    activeTicker: state.activeTicker
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(stockData);

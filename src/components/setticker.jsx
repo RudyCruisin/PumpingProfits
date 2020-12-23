@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 const SetTicker = ({activeTicker}) => {
 
-    console.log(activeTicker)
+    // console.log(activeTicker)
 
     return (
         <div>

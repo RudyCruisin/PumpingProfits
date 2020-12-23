@@ -21,8 +21,8 @@ export const activeTicker = activeSymbl => {
     }
 }
 
-export const stockApi = () => dispatch => {
-    fetch('https://cloud.iexapis.com/stable/stock/aapl/quote?token=pk_4fc5d3b61472414c8d99930c0ccbffe6')
+export const stockApi = (ticker) => dispatch => {
+    fetch(`https://cloud.iexapis.com/stable/stock/spce/quote?token=pk_4fc5d3b61472414c8d99930c0ccbffe6`)
         .then(response => response.json())
         .then(data => {
             console.log(data)

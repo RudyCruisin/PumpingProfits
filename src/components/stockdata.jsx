@@ -3,15 +3,17 @@ import { stockApi } from '../redux/actions'
 
 const stockData = props => {
 
+    const ticker = props => <div>{props.symbl}</div>
+
+
     const handleStockApi = (symbl) => {
+        console.log("IAMTICKER" + ticker)
         props.stockApi(symbl);
-        console.log(symbl)
     };
 
     return (
         <div>
             <button onClick={() => handleStockApi()}>Pull Data!</button>
-            {/* {JSON.stringify(activeTicker.activeSymbl)} */}
         </div>
     );
 };

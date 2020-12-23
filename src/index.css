@@ -28,6 +28,7 @@ header {
   background-color: black;
   display: flex;
   align-items: center;
+  background-image: url('https://64.media.tumblr.com/61c8d368e2a6e53ecf048b8bbc1ef60d/tumblr_mwyo98aufM1t3hbhyo1_r1_500.gif');
 }
 
 main {
@@ -70,22 +71,26 @@ img {
 }
 
 .one {
-  border: solid red;
+  /* border: solid red; */
+  margin-right: 50px;
 }
 
 .box1 {
   display: grid;
   grid-template-rows: 1fr 73vh;
-  bordeR: solid silver;
+  /* bordeR: solid silver; */
 } 
 
 .two {
-  border: solid purple;
+  /* border: solid purple; */
   grid-row: 1;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .three {
-  border: solid green;
+  /* border: solid green; */
   grid-row: 2/3;
 }
 
